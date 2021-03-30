@@ -2,7 +2,7 @@ var app = require('express')();
 var proxy = require('express-http-proxy');
 
 var PORT = process.env.PORT || 3000;
-var ICONFINDER_API_KEY = process.env.ICONFINDER_API_KEY;
+var ICONFINDER_API_KEY = "pKyaAO9MwR1BGdtHKAXzb16xvmlRS0MMNviGerfItjXO6t0CkuuR8w9vFl96LOrM";
 
 app.use(proxy("api.iconfinder.com", {
     https: true,
